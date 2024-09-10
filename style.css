@@ -1,0 +1,458 @@
+/* Gradient Background Animation */
+body {
+    margin-top: 40px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 140vh;
+    background: linear-gradient(120deg, #a960ee, #ff3382, #90eeff, #ffcb57, #4ae595, #f0a740);
+    background-size: 200% 200%;
+    animation: gradientWave 15s ease infinite;
+    position: relative;
+    overflow: auto;
+
+}
+
+/* Keyframes for Gradient Wave Animation */
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Curved Section Using SVG */
+.curved-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHZoIiB2aWV3Qm94PSIwIDAgMTAwMCA1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2YzMzNkIiBkPSJNMCwwIEMxNTAwLDEwMCA1MDAwLDEwMCA2MDAwLDEwMEw2MDAwLDEwMEw2MDAwLDEwMEM2MDAwLDEwMCA0MDAwLDEwMCA0MDAwLDQwMEw0MDAwLDQwMEwwLDAgWiIvPjxwYXRoIGZpbGw9IiNmZmNiNTciIGQ9Ik0wLDBDMTAwMCwwIDUwMDAsMTAwMCA1MDAwLDIwMDAgMTAwMDAsNDAwMCA1MDAwLDQwMDAgNTAwMCwwWiIvPjxwYXRoIGZpbGw9IiNhOTYwZWUiIGQ9Ik0wLDBDMTAwMCwwIDUwMDAsMTAwMCA1MDAwLDMwMDAgMTAwMDAsNDAwMCA1MDAwLDQwMDAgNTAwMCwwWiIvPjwvc3ZnPg==') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+
+/* Container Style */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(22, 33, 62, 0.85); /* Semi-transparent to see the gradient */
+    border-radius: 12px;
+    border: 1px solid #0f3460;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+/* Headings Style */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e94560;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e94560;
+    padding-bottom: 10px;
+}
+
+h2, h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Paragraph Style */
+p {
+    margin: 10px 0;
+    color: #dcdde1;
+}
+
+/* Menu Style */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e94560;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e94560;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* Form Style */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #888E8E5E;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #e94560;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #7272752e;
+    color: #fff;
+}
+
+
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    
+}
+
+input[type="submit"] {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d6295b;
+}
+
+/* Result Style */
+.result {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #1a1a2e;
+    color: #e94560;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Link Style */
+a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Index Page Style */
+#index_page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(22, 33, 62, 0.85); /* Semi-transparent to see the gradient */
+    border-radius: 12px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+}
+
+#index_menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#index_menu li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#index_menu a {
+    text-decoration: none;
+    color: #e94560;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e94560;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#index_menu a:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.area{
+   
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #ff3300;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; /* Set width to 50% to position it on the left */
+    height: 50vh; /* Set to full viewport height */
+    background: url('style/1.png') no-repeat left center;
+    background-size: contain; /* Ensure the entire image is visible */
+    z-index: -1;
+    animation: moveBackground 20s linear infinite, rotateBackground 15s linear infinite;
+}
+
+/* Keyframes for Background Image Vertical Movement */
+@keyframes moveBackground {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Slight movement */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for Background Image Rotation */
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header-background1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%; /* Set width to 25% */
+    height: 50vh; /* Set to half of the viewport height */
+    background: url('style/1.png') no-repeat right center;
+    background-size: contain; /* Ensure the entire image is visible */
+    z-index: 1; /* Increased z-index */
+    animation: moveBackground1 20s linear infinite, rotateBackground1 15s linear infinite;
+}
+
+/* Keyframes for Background Image Vertical Movement */
+@keyframes moveBackground1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Slight movement */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for Background Image Rotation */
+@keyframes rotateBackground1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+option{
+    background-color: #41666694;
+    color: white;
+}
+
+.part{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.part img {
+    width: 600px; /* Adjust this size as needed */
+    height: 300px; /* Adjust this size as needed */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
